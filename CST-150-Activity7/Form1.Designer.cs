@@ -34,6 +34,7 @@
             this.calculateButton = new System.Windows.Forms.Button();
             this.solutionLabel = new System.Windows.Forms.Label();
             this.answer = new System.Windows.Forms.Label();
+            this.error = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // title
@@ -97,7 +98,7 @@
             this.answer.AutoSize = true;
             this.answer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
             this.answer.Font = new System.Drawing.Font("Verdana", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(195)))), ((int)(((byte)(176)))));
+            this.answer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.answer.Location = new System.Drawing.Point(942, 697);
             this.answer.Name = "answer";
             this.answer.Size = new System.Drawing.Size(47, 65);
@@ -105,12 +106,24 @@
             this.answer.Text = " ";
             this.answer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // error
+            // 
+            this.error.AutoSize = true;
+            this.error.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.error.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.error.Location = new System.Drawing.Point(968, 457);
+            this.error.Name = "error";
+            this.error.Size = new System.Drawing.Size(28, 38);
+            this.error.TabIndex = 6;
+            this.error.Text = " ";
+            // 
             // findingPi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(195)))), ((int)(((byte)(176)))));
             this.ClientSize = new System.Drawing.Size(1864, 1052);
+            this.Controls.Add(this.error);
             this.Controls.Add(this.answer);
             this.Controls.Add(this.solutionLabel);
             this.Controls.Add(this.calculateButton);
@@ -133,6 +146,7 @@
         private System.Windows.Forms.Button calculateButton;
         private System.Windows.Forms.Label solutionLabel;
         private System.Windows.Forms.Label answer;
+        private System.Windows.Forms.Label error;
     }
 }
 
