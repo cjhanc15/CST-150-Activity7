@@ -32,11 +32,13 @@
             this.termsLabel = new System.Windows.Forms.Label();
             this.terms = new System.Windows.Forms.TextBox();
             this.calculateButton = new System.Windows.Forms.Button();
+            this.solutionLabel = new System.Windows.Forms.Label();
             this.answer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // title
             // 
+            this.title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
             this.title.Font = new System.Drawing.Font("Verdana", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.title.Location = new System.Drawing.Point(0, 0);
             this.title.Name = "title";
@@ -48,50 +50,74 @@
             // termsLabel
             // 
             this.termsLabel.Font = new System.Drawing.Font("Verdana", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.termsLabel.Location = new System.Drawing.Point(487, 386);
+            this.termsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
+            this.termsLabel.Location = new System.Drawing.Point(431, 382);
             this.termsLabel.Name = "termsLabel";
-            this.termsLabel.Size = new System.Drawing.Size(517, 72);
+            this.termsLabel.Size = new System.Drawing.Size(538, 72);
             this.termsLabel.TabIndex = 1;
             this.termsLabel.Text = "Number of Terms:";
             // 
             // terms
             // 
+            this.terms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(245)))), ((int)(((byte)(229)))));
             this.terms.Font = new System.Drawing.Font("Verdana", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.terms.Location = new System.Drawing.Point(1010, 386);
+            this.terms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(195)))), ((int)(((byte)(176)))));
+            this.terms.Location = new System.Drawing.Point(975, 382);
             this.terms.Name = "terms";
             this.terms.Size = new System.Drawing.Size(188, 72);
             this.terms.TabIndex = 2;
             // 
             // calculateButton
             // 
-            this.calculateButton.Location = new System.Drawing.Point(1204, 386);
+            this.calculateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.calculateButton.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculateButton.Location = new System.Drawing.Point(1169, 382);
             this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(157, 72);
+            this.calculateButton.Size = new System.Drawing.Size(243, 72);
             this.calculateButton.TabIndex = 3;
             this.calculateButton.Text = "CALCULATE";
-            this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.UseVisualStyleBackColor = false;
             this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
+            // 
+            // solutionLabel
+            // 
+            this.solutionLabel.AutoSize = true;
+            this.solutionLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
+            this.solutionLabel.Font = new System.Drawing.Font("Verdana", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.solutionLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(195)))), ((int)(((byte)(176)))));
+            this.solutionLabel.Location = new System.Drawing.Point(674, 697);
+            this.solutionLabel.Name = "solutionLabel";
+            this.solutionLabel.Size = new System.Drawing.Size(271, 65);
+            this.solutionLabel.TabIndex = 4;
+            this.solutionLabel.Text = "Solution:";
+            this.solutionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // answer
             // 
             this.answer.AutoSize = true;
+            this.answer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(234)))), ((int)(((byte)(213)))));
             this.answer.Font = new System.Drawing.Font("Verdana", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answer.Location = new System.Drawing.Point(733, 721);
+            this.answer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(195)))), ((int)(((byte)(176)))));
+            this.answer.Location = new System.Drawing.Point(942, 697);
             this.answer.Name = "answer";
-            this.answer.Size = new System.Drawing.Size(271, 65);
-            this.answer.TabIndex = 4;
-            this.answer.Text = "Solution:";
+            this.answer.Size = new System.Drawing.Size(47, 65);
+            this.answer.TabIndex = 5;
+            this.answer.Text = " ";
+            this.answer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // findingPi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(195)))), ((int)(((byte)(176)))));
             this.ClientSize = new System.Drawing.Size(1864, 1052);
             this.Controls.Add(this.answer);
+            this.Controls.Add(this.solutionLabel);
             this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.terms);
             this.Controls.Add(this.termsLabel);
             this.Controls.Add(this.title);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(195)))), ((int)(((byte)(176)))));
             this.Name = "findingPi";
             this.Text = "Finding Pi";
             this.ResumeLayout(false);
@@ -105,6 +131,7 @@
         private System.Windows.Forms.Label termsLabel;
         private System.Windows.Forms.TextBox terms;
         private System.Windows.Forms.Button calculateButton;
+        private System.Windows.Forms.Label solutionLabel;
         private System.Windows.Forms.Label answer;
     }
 }
