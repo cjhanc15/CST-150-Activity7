@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(findingPi));
             this.title = new System.Windows.Forms.Label();
             this.termsLabel = new System.Windows.Forms.Label();
             this.terms = new System.Windows.Forms.TextBox();
@@ -131,6 +132,7 @@
             this.Controls.Add(this.termsLabel);
             this.Controls.Add(this.title);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(195)))), ((int)(((byte)(176)))));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "findingPi";
             this.Text = "Finding Pi";
             this.ResumeLayout(false);
