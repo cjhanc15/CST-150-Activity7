@@ -12,8 +12,14 @@
 
 3. See the solution below!
 As you can see from the examples below, the higher the number, the closer it is to PI. The lower the number, the lesser the accuracy.
+
+Finding Pi running with a low positive integer.
 <img width="933" alt="Screenshot 2022-11-20 at 3 55 17 PM" src="https://user-images.githubusercontent.com/102087890/202931077-6690b0dd-9162-42a6-baa3-d7567fc3bd44.png">
+
+Finding Pi running with a medium positive integer.
 <img width="933" alt="Screenshot 2022-11-20 at 3 55 44 PM" src="https://user-images.githubusercontent.com/102087890/202931080-36c24095-cb2b-495c-b775-8b8e5e9a1412.png">
+
+Finding Pi running with a larger positive integer.
 <img width="930" alt="Screenshot 2022-11-20 at 3 56 10 PM" src="https://user-images.githubusercontent.com/102087890/202931084-34ec5ee9-16a1-4dfc-a7f1-2d0040de632e.png">
 
 ## Video Walkthrough: https://www.loom.com/share/7f7960c12a5d485fa8f07de42273a79a
